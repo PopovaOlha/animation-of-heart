@@ -1,0 +1,144 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .input-container span {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  .heart-animation {
+    width: 50px;
+    height: 50px;
+    background-image: url('../public/heart-png-38773.png');
+    background-size: contain;
+    animation: heartbeat 1s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(0.75);
+    }
+    20% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.75);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(0.75);
+    }
+    100% {
+      transform: scale(0.75);
+    }
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  .input-container {
+    position: relative;
+  }
+  
+  .copy-text {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .copied-message {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    animation: fadeOut 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  .emoji-copy-button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .emoji-copy-button:hover {
+    background-color: #e0e0e0;
+  }
+
+  @media (max-width: 768px) {
+    .input-container input {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      margin: 0 5px;
+    }
+  
+    .input-container span {
+      font-size: 18px;
+      margin: 0 5px;
+    }
+  
+    .heart-animation {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .emoji-copy-button,
+    .copy-text {
+      padding: 4px 8px;
+      font-size: 10px;
+    }
+  }
