@@ -14,6 +14,7 @@ const EmojiCopyButton = ({ emoji }) => {
       }
     );
   };
+  console.log(EmojiCopyButton);
 
   return (
     <div className="emoji-copy-button" onClick={copyEmojiToClipboard}>
@@ -22,6 +23,7 @@ const EmojiCopyButton = ({ emoji }) => {
     </div>
   );
 };
+
 
 const InputAnimation = () => {
   const [input1, setInput1] = useState('');
