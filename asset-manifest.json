@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PopovaOlha/animation-of-heart.git/static/css/main.c7e3b3f0.css",
-    "main.js": "/PopovaOlha/animation-of-heart.git/static/js/main.0f3c6387.js",
-    "static/js/453.99228bb8.chunk.js": "/PopovaOlha/animation-of-heart.git/static/js/453.99228bb8.chunk.js",
-    "static/media/heart-png-38773.png": "/PopovaOlha/animation-of-heart.git/static/media/heart-png-38773.67ad6142e4d392981dae.png",
-    "index.html": "/PopovaOlha/animation-of-heart.git/index.html",
-    "main.c7e3b3f0.css.map": "/PopovaOlha/animation-of-heart.git/static/css/main.c7e3b3f0.css.map",
-    "main.0f3c6387.js.map": "/PopovaOlha/animation-of-heart.git/static/js/main.0f3c6387.js.map",
-    "453.99228bb8.chunk.js.map": "/PopovaOlha/animation-of-heart.git/static/js/453.99228bb8.chunk.js.map"
+    "main.css": "/animation-of-heart/static/css/main.9b8b628a.css",
+    "main.js": "/animation-of-heart/static/js/main.bd0f4a9e.js",
+    "static/js/453.99228bb8.chunk.js": "/animation-of-heart/static/js/453.99228bb8.chunk.js",
+    "static/media/heart-png-38773.png": "/animation-of-heart/static/media/heart-png-38773.67ad6142e4d392981dae.png",
+    "index.html": "/animation-of-heart/index.html",
+    "main.9b8b628a.css.map": "/animation-of-heart/static/css/main.9b8b628a.css.map",
+    "main.bd0f4a9e.js.map": "/animation-of-heart/static/js/main.bd0f4a9e.js.map",
+    "453.99228bb8.chunk.js.map": "/animation-of-heart/static/js/453.99228bb8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7e3b3f0.css",
-    "static/js/main.0f3c6387.js"
+    "static/css/main.9b8b628a.css",
+    "static/js/main.bd0f4a9e.js"
   ]
 }
