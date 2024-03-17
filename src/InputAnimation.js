@@ -1,29 +1,5 @@
 import React, { useState } from 'react';
-
-const EmojiCopyButton = ({ emoji }) => {
-  const [showCopiedMessage, setShowCopiedMessage] = useState(false);
-
-  const copyEmojiToClipboard = () => {
-    navigator.clipboard.writeText(emoji).then(
-      () => {
-        setShowCopiedMessage(true);
-        setTimeout(() => setShowCopiedMessage(false), 2000); // Скрыть сообщение через 2 секунды
-      },
-      (error) => {
-        console.error('Ошибка при копировании эмодзи:', error);
-      }
-    );
-  };
-  console.log(EmojiCopyButton);
-
-  return (
-    <div className="emoji-copy-button" onClick={copyEmojiToClipboard}>
-      <span>Copy me ({emoji})</span>
-      {showCopiedMessage && <div className="copied-message">Copy✔️</div>}
-    </div>
-  );
-};
-
+import EmojiCopyButton from './EmojiCopyButton'; // Импортируем EmojiCopyButton из соответствующего файла
 
 const InputAnimation = () => {
   const [input1, setInput1] = useState('');
@@ -59,7 +35,7 @@ const InputAnimation = () => {
   return (
     <div className="input-container">
       <div className="input-wrapper">
-        <div className="copy-text" onClick={() => handleCopyEmoji("🌜")}>Copy me 🌜</div>
+        <EmojiCopyButton emoji="🌜" handleCopyEmoji={handleCopyEmoji} />
         <input
           type="text"
           placeholder=""
@@ -69,7 +45,7 @@ const InputAnimation = () => {
       </div>
       <span>➕</span>
       <div className="input-wrapper">
-        <div className="copy-text" onClick={() => handleCopyEmoji("🌞")}>Copy me 🌞</div>
+        <EmojiCopyButton emoji="🌞" handleCopyEmoji={handleCopyEmoji} />
         <input
           type="text"
           placeholder=""
@@ -81,9 +57,10 @@ const InputAnimation = () => {
       {showEquals && (
         <div className="heart-animation"></div>
       )}
-      {copiedMessage && <div className="copied-message">Скопировано!</div>}
+      {copiedMessage && <div className="copied-message">Copy✔️</div>}
     </div>
   );
 };
 
 export default InputAnimation;
+
